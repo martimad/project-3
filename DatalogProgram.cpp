@@ -52,5 +52,8 @@ void DatalogProgram::toString(){
         cout << "  " << *it << endl;
         ++it;
     }
+}
 
+vector<Predicate> DatalogProgram::getSchemes() {
+    return schemePredicates;
 }

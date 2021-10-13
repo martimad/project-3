@@ -14,6 +14,8 @@ CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.obj: ../Token.h
 CMakeFiles/project_2.dir/Database.cpp.obj: ../Database.cpp
 CMakeFiles/project_2.dir/Database.cpp.obj: ../Database.h
 CMakeFiles/project_2.dir/Database.cpp.obj: ../Header.h
+CMakeFiles/project_2.dir/Database.cpp.obj: ../Parameter.h
+CMakeFiles/project_2.dir/Database.cpp.obj: ../Predicate.h
 CMakeFiles/project_2.dir/Database.cpp.obj: ../Relation.h
 CMakeFiles/project_2.dir/Database.cpp.obj: ../Tuple.h
 
@@ -48,6 +50,7 @@ CMakeFiles/project_2.dir/Parser.cpp.obj: ../Rule.h
 CMakeFiles/project_2.dir/Parser.cpp.obj: ../Token.h
 
 CMakeFiles/project_2.dir/Relation.cpp.obj: ../Header.h
+CMakeFiles/project_2.dir/Relation.cpp.obj: ../Parameter.h
 CMakeFiles/project_2.dir/Relation.cpp.obj: ../Relation.cpp
 CMakeFiles/project_2.dir/Relation.cpp.obj: ../Relation.h
 CMakeFiles/project_2.dir/Relation.cpp.obj: ../Tuple.h

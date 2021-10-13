@@ -7,6 +7,7 @@
 
 #include "Relation.h"
 #include "Tuple.h"
+#include "Predicate.h"
 #include <iostream>
 #include <map>
 
@@ -16,9 +17,10 @@ class Database {
 private:
     map<string, Relation*> databaseMap;
 public:
-    Database();
-    ~Database();
+    Database(){};
+    ~Database(){};
 
+    void buildSchemes(vector<Predicate>);
 
 };
 

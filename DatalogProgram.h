@@ -28,6 +28,8 @@ public:
     void addToRule(Rule);
     void addToSet(const string);
     void toString();
+
+    vector<Predicate> getSchemes();
 };
 
 

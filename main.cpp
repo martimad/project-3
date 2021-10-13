@@ -26,6 +26,7 @@ int main(int argc, char** argv) {
     Lexer* lexer = new Lexer();
     vector <Token*> tokensFromLexer;
     Parser* parser = new Parser();
+    Database* database = new Database();
 
     lexer->Run(fileContentToPass);
     tokensFromLexer = lexer->returnVector();
@@ -42,10 +43,17 @@ int main(int argc, char** argv) {
         cout << "Failure!" << endl << errorStatement << endl;
         return 0;
     }
-    parser->toString();
+    //parser->toString();
+
+    ////start database
+    database->buildSchemes(parser->getDatalog().getSchemes());
+    //database build facts
+    //database build queries
+    //database run queries
 
     delete lexer;
     delete parser;
+    delete database;
 
     return 0;
 }

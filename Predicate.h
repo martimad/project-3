@@ -20,7 +20,13 @@ public:
     Predicate(string initialIDPassed, vector<Parameter> parametersPassed ) : parameters(parametersPassed){
         this->initialID = initialIDPassed;
     }
-////needed to string
+    string getID(){
+        return initialID;
+    };
+    vector<Parameter> getParamVec(){
+        return parameters;
+    }
+
     string toString(){
         stringstream ss;
         ss << initialID << "(";
@@ -32,6 +38,9 @@ public:
         returnString += ")";
         return returnString;
     }
+    ////get whole vector
+    ////get specific parameter
+
 };
 
 

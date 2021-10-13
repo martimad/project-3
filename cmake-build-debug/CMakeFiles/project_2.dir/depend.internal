@@ -15,6 +15,8 @@ CMakeFiles/project_2.dir/Database.cpp.obj
  C:/Users/Madelynn/CS236/project-3/Database.cpp
  C:/Users/Madelynn/CS236/project-3/Database.h
  C:/Users/Madelynn/CS236/project-3/Header.h
+ C:/Users/Madelynn/CS236/project-3/Parameter.h
+ C:/Users/Madelynn/CS236/project-3/Predicate.h
  C:/Users/Madelynn/CS236/project-3/Relation.h
  C:/Users/Madelynn/CS236/project-3/Tuple.h
 CMakeFiles/project_2.dir/DatalogProgram.cpp.obj
@@ -49,6 +51,7 @@ CMakeFiles/project_2.dir/Parser.cpp.obj
  C:/Users/Madelynn/CS236/project-3/Token.h
 CMakeFiles/project_2.dir/Relation.cpp.obj
  C:/Users/Madelynn/CS236/project-3/Header.h
+ C:/Users/Madelynn/CS236/project-3/Parameter.h
  C:/Users/Madelynn/CS236/project-3/Relation.cpp
  C:/Users/Madelynn/CS236/project-3/Relation.h
  C:/Users/Madelynn/CS236/project-3/Tuple.h

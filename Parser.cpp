@@ -291,3 +291,8 @@ void Parser::parameter(vector<Parameter>& passedVec){
     }
     else{ passedVec.push_back(Parameter(match("ID"))); }
 }
+
+
+DatalogProgram Parser::getDatalog() {
+    return data;
+}

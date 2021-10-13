@@ -45,6 +45,9 @@ public:
     void idList(vector<Parameter>&);
     void parameter(vector<Parameter>&);
 
+    ////project-3 needs
+    DatalogProgram getDatalog();
+
 
 
 };

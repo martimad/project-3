@@ -9,8 +9,8 @@
 
 using namespace std;
 class Tuple{
-    Tuple();
-    ~Tuple();
+    Tuple() = default;
+    ~Tuple() = default;
     vector<string> listOfTuples;
 };
 #endif //PROJECT_2_TUPLE_H
