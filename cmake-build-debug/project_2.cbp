@@ -140,6 +140,12 @@
 		<Unit filename="C:/Users/Madelynn/CS236/project-3/Predicate.h">
 			<Option target="project_2"/>
 		</Unit>
+		<Unit filename="C:/Users/Madelynn/CS236/project-3/Relation.cpp">
+			<Option target="project_2"/>
+		</Unit>
+		<Unit filename="C:/Users/Madelynn/CS236/project-3/Relation.h">
+			<Option target="project_2"/>
+		</Unit>
 		<Unit filename="C:/Users/Madelynn/CS236/project-3/Rule.h">
 			<Option target="project_2"/>
 		</Unit>

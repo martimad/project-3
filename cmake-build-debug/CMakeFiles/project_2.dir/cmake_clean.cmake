@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/project_2.dir/Lexer.cpp.obj"
   "CMakeFiles/project_2.dir/MatcherAutomaton.cpp.obj"
   "CMakeFiles/project_2.dir/Parser.cpp.obj"
+  "CMakeFiles/project_2.dir/Relation.cpp.obj"
   "CMakeFiles/project_2.dir/Token.cpp.obj"
   "CMakeFiles/project_2.dir/main.cpp.obj"
   "libproject_2.dll.a"

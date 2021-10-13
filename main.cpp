@@ -1,6 +1,7 @@
 
 #include "Lexer.h"
 #include "Parser.h"
+#include "Database.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>

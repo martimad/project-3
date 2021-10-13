@@ -331,6 +331,33 @@ Parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_2.dir\build.make CMakeFiles/project_2.dir/Parser.cpp.s
 .PHONY : Parser.cpp.s
 
+Relation.obj: Relation.cpp.obj
+
+.PHONY : Relation.obj
+
+# target to build an object file
+Relation.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_2.dir\build.make CMakeFiles/project_2.dir/Relation.cpp.obj
+.PHONY : Relation.cpp.obj
+
+Relation.i: Relation.cpp.i
+
+.PHONY : Relation.i
+
+# target to preprocess a source file
+Relation.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_2.dir\build.make CMakeFiles/project_2.dir/Relation.cpp.i
+.PHONY : Relation.cpp.i
+
+Relation.s: Relation.cpp.s
+
+.PHONY : Relation.s
+
+# target to generate assembly for a file
+Relation.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_2.dir\build.make CMakeFiles/project_2.dir/Relation.cpp.s
+.PHONY : Relation.cpp.s
+
 Token.obj: Token.cpp.obj
 
 .PHONY : Token.obj
@@ -415,6 +442,9 @@ help:
 	@echo ... Parser.obj
 	@echo ... Parser.i
 	@echo ... Parser.s
+	@echo ... Relation.obj
+	@echo ... Relation.i
+	@echo ... Relation.s
 	@echo ... Token.obj
 	@echo ... Token.i
 	@echo ... Token.s
