@@ -62,10 +62,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Madelynn\CS236\project-2
+CMAKE_SOURCE_DIR = C:\Users\Madelynn\CS236\project-3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Madelynn\CS236\project-2\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Madelynn\CS236\project-3\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/project_2.dir/depend.make
@@ -78,107 +78,120 @@ include CMakeFiles/project_2.dir/flags.make
 
 CMakeFiles/project_2.dir/main.cpp.obj: CMakeFiles/project_2.dir/flags.make
 CMakeFiles/project_2.dir/main.cpp.obj: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_2.dir/main.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\main.cpp.obj -c C:\Users\Madelynn\CS236\project-2\main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_2.dir/main.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\main.cpp.obj -c C:\Users\Madelynn\CS236\project-3\main.cpp
 
 CMakeFiles/project_2.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/main.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-2\main.cpp > CMakeFiles\project_2.dir\main.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-3\main.cpp > CMakeFiles\project_2.dir\main.cpp.i
 
 CMakeFiles/project_2.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/main.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-2\main.cpp -o CMakeFiles\project_2.dir\main.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-3\main.cpp -o CMakeFiles\project_2.dir\main.cpp.s
 
 CMakeFiles/project_2.dir/ColonAutomaton.cpp.obj: CMakeFiles/project_2.dir/flags.make
 CMakeFiles/project_2.dir/ColonAutomaton.cpp.obj: ../ColonAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project_2.dir/ColonAutomaton.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\ColonAutomaton.cpp.obj -c C:\Users\Madelynn\CS236\project-2\ColonAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project_2.dir/ColonAutomaton.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\ColonAutomaton.cpp.obj -c C:\Users\Madelynn\CS236\project-3\ColonAutomaton.cpp
 
 CMakeFiles/project_2.dir/ColonAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/ColonAutomaton.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-2\ColonAutomaton.cpp > CMakeFiles\project_2.dir\ColonAutomaton.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-3\ColonAutomaton.cpp > CMakeFiles\project_2.dir\ColonAutomaton.cpp.i
 
 CMakeFiles/project_2.dir/ColonAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/ColonAutomaton.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-2\ColonAutomaton.cpp -o CMakeFiles\project_2.dir\ColonAutomaton.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-3\ColonAutomaton.cpp -o CMakeFiles\project_2.dir\ColonAutomaton.cpp.s
 
 CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.obj: CMakeFiles/project_2.dir/flags.make
 CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.obj: ../ColonDashAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\ColonDashAutomaton.cpp.obj -c C:\Users\Madelynn\CS236\project-2\ColonDashAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\ColonDashAutomaton.cpp.obj -c C:\Users\Madelynn\CS236\project-3\ColonDashAutomaton.cpp
 
 CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-2\ColonDashAutomaton.cpp > CMakeFiles\project_2.dir\ColonDashAutomaton.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-3\ColonDashAutomaton.cpp > CMakeFiles\project_2.dir\ColonDashAutomaton.cpp.i
 
 CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-2\ColonDashAutomaton.cpp -o CMakeFiles\project_2.dir\ColonDashAutomaton.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-3\ColonDashAutomaton.cpp -o CMakeFiles\project_2.dir\ColonDashAutomaton.cpp.s
 
 CMakeFiles/project_2.dir/DatalogProgram.cpp.obj: CMakeFiles/project_2.dir/flags.make
 CMakeFiles/project_2.dir/DatalogProgram.cpp.obj: ../DatalogProgram.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project_2.dir/DatalogProgram.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\DatalogProgram.cpp.obj -c C:\Users\Madelynn\CS236\project-2\DatalogProgram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project_2.dir/DatalogProgram.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\DatalogProgram.cpp.obj -c C:\Users\Madelynn\CS236\project-3\DatalogProgram.cpp
 
 CMakeFiles/project_2.dir/DatalogProgram.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/DatalogProgram.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-2\DatalogProgram.cpp > CMakeFiles\project_2.dir\DatalogProgram.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-3\DatalogProgram.cpp > CMakeFiles\project_2.dir\DatalogProgram.cpp.i
 
 CMakeFiles/project_2.dir/DatalogProgram.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/DatalogProgram.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-2\DatalogProgram.cpp -o CMakeFiles\project_2.dir\DatalogProgram.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-3\DatalogProgram.cpp -o CMakeFiles\project_2.dir\DatalogProgram.cpp.s
 
 CMakeFiles/project_2.dir/Lexer.cpp.obj: CMakeFiles/project_2.dir/flags.make
 CMakeFiles/project_2.dir/Lexer.cpp.obj: ../Lexer.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project_2.dir/Lexer.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\Lexer.cpp.obj -c C:\Users\Madelynn\CS236\project-2\Lexer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project_2.dir/Lexer.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\Lexer.cpp.obj -c C:\Users\Madelynn\CS236\project-3\Lexer.cpp
 
 CMakeFiles/project_2.dir/Lexer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Lexer.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-2\Lexer.cpp > CMakeFiles\project_2.dir\Lexer.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-3\Lexer.cpp > CMakeFiles\project_2.dir\Lexer.cpp.i
 
 CMakeFiles/project_2.dir/Lexer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Lexer.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-2\Lexer.cpp -o CMakeFiles\project_2.dir\Lexer.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-3\Lexer.cpp -o CMakeFiles\project_2.dir\Lexer.cpp.s
 
 CMakeFiles/project_2.dir/MatcherAutomaton.cpp.obj: CMakeFiles/project_2.dir/flags.make
 CMakeFiles/project_2.dir/MatcherAutomaton.cpp.obj: ../MatcherAutomaton.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project_2.dir/MatcherAutomaton.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\MatcherAutomaton.cpp.obj -c C:\Users\Madelynn\CS236\project-2\MatcherAutomaton.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project_2.dir/MatcherAutomaton.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\MatcherAutomaton.cpp.obj -c C:\Users\Madelynn\CS236\project-3\MatcherAutomaton.cpp
 
 CMakeFiles/project_2.dir/MatcherAutomaton.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/MatcherAutomaton.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-2\MatcherAutomaton.cpp > CMakeFiles\project_2.dir\MatcherAutomaton.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-3\MatcherAutomaton.cpp > CMakeFiles\project_2.dir\MatcherAutomaton.cpp.i
 
 CMakeFiles/project_2.dir/MatcherAutomaton.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/MatcherAutomaton.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-2\MatcherAutomaton.cpp -o CMakeFiles\project_2.dir\MatcherAutomaton.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-3\MatcherAutomaton.cpp -o CMakeFiles\project_2.dir\MatcherAutomaton.cpp.s
 
 CMakeFiles/project_2.dir/Parser.cpp.obj: CMakeFiles/project_2.dir/flags.make
 CMakeFiles/project_2.dir/Parser.cpp.obj: ../Parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_2.dir/Parser.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\Parser.cpp.obj -c C:\Users\Madelynn\CS236\project-2\Parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_2.dir/Parser.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\Parser.cpp.obj -c C:\Users\Madelynn\CS236\project-3\Parser.cpp
 
 CMakeFiles/project_2.dir/Parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Parser.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-2\Parser.cpp > CMakeFiles\project_2.dir\Parser.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-3\Parser.cpp > CMakeFiles\project_2.dir\Parser.cpp.i
 
 CMakeFiles/project_2.dir/Parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Parser.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-2\Parser.cpp -o CMakeFiles\project_2.dir\Parser.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-3\Parser.cpp -o CMakeFiles\project_2.dir\Parser.cpp.s
 
 CMakeFiles/project_2.dir/Token.cpp.obj: CMakeFiles/project_2.dir/flags.make
 CMakeFiles/project_2.dir/Token.cpp.obj: ../Token.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project_2.dir/Token.cpp.obj"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\Token.cpp.obj -c C:\Users\Madelynn\CS236\project-2\Token.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project_2.dir/Token.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\Token.cpp.obj -c C:\Users\Madelynn\CS236\project-3\Token.cpp
 
 CMakeFiles/project_2.dir/Token.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Token.cpp.i"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-2\Token.cpp > CMakeFiles\project_2.dir\Token.cpp.i
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-3\Token.cpp > CMakeFiles\project_2.dir\Token.cpp.i
 
 CMakeFiles/project_2.dir/Token.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Token.cpp.s"
-	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-2\Token.cpp -o CMakeFiles\project_2.dir\Token.cpp.s
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-3\Token.cpp -o CMakeFiles\project_2.dir\Token.cpp.s
+
+CMakeFiles/project_2.dir/Database.cpp.obj: CMakeFiles/project_2.dir/flags.make
+CMakeFiles/project_2.dir/Database.cpp.obj: ../Database.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project_2.dir/Database.cpp.obj"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\project_2.dir\Database.cpp.obj -c C:\Users\Madelynn\CS236\project-3\Database.cpp
+
+CMakeFiles/project_2.dir/Database.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_2.dir/Database.cpp.i"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Madelynn\CS236\project-3\Database.cpp > CMakeFiles\project_2.dir\Database.cpp.i
+
+CMakeFiles/project_2.dir/Database.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_2.dir/Database.cpp.s"
+	C:\PROGRA~2\MINGW-~1\I686-8~1.0-P\mingw32\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Madelynn\CS236\project-3\Database.cpp -o CMakeFiles\project_2.dir\Database.cpp.s
 
 # Object files for target project_2
 project_2_OBJECTS = \
@@ -189,7 +202,8 @@ project_2_OBJECTS = \
 "CMakeFiles/project_2.dir/Lexer.cpp.obj" \
 "CMakeFiles/project_2.dir/MatcherAutomaton.cpp.obj" \
 "CMakeFiles/project_2.dir/Parser.cpp.obj" \
-"CMakeFiles/project_2.dir/Token.cpp.obj"
+"CMakeFiles/project_2.dir/Token.cpp.obj" \
+"CMakeFiles/project_2.dir/Database.cpp.obj"
 
 # External object files for target project_2
 project_2_EXTERNAL_OBJECTS =
@@ -202,11 +216,12 @@ project_2.exe: CMakeFiles/project_2.dir/Lexer.cpp.obj
 project_2.exe: CMakeFiles/project_2.dir/MatcherAutomaton.cpp.obj
 project_2.exe: CMakeFiles/project_2.dir/Parser.cpp.obj
 project_2.exe: CMakeFiles/project_2.dir/Token.cpp.obj
+project_2.exe: CMakeFiles/project_2.dir/Database.cpp.obj
 project_2.exe: CMakeFiles/project_2.dir/build.make
 project_2.exe: CMakeFiles/project_2.dir/linklibs.rsp
 project_2.exe: CMakeFiles/project_2.dir/objects1.rsp
 project_2.exe: CMakeFiles/project_2.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable project_2.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable project_2.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\project_2.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -219,6 +234,6 @@ CMakeFiles/project_2.dir/clean:
 .PHONY : CMakeFiles/project_2.dir/clean
 
 CMakeFiles/project_2.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Madelynn\CS236\project-2 C:\Users\Madelynn\CS236\project-2 C:\Users\Madelynn\CS236\project-2\cmake-build-debug C:\Users\Madelynn\CS236\project-2\cmake-build-debug C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles\project_2.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Madelynn\CS236\project-3 C:\Users\Madelynn\CS236\project-3 C:\Users\Madelynn\CS236\project-3\cmake-build-debug C:\Users\Madelynn\CS236\project-3\cmake-build-debug C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles\project_2.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/project_2.dir/depend
 

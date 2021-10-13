@@ -9,6 +9,7 @@ CMakeFiles/project_2.dir/ColonAutomaton.cpp.obj: ../Token.h
 CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.obj: ../Automaton.h
 CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.obj: ../ColonDashAutomaton.cpp
 CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.obj: ../ColonDashAutomaton.h
+CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.obj: ../Token.h
 
 CMakeFiles/project_2.dir/DatalogProgram.cpp.obj: ../DatalogProgram.cpp
 CMakeFiles/project_2.dir/DatalogProgram.cpp.obj: ../DatalogProgram.h

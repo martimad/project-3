@@ -67,10 +67,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.2.3\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Madelynn\CS236\project-2
+CMAKE_SOURCE_DIR = C:\Users\Madelynn\CS236\project-3
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Madelynn\CS236\project-2\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\Madelynn\CS236\project-3\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Madelynn\CS236\project-2\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Madelynn\CS236\project-3\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -195,6 +195,33 @@ ColonDashAutomaton.s: ColonDashAutomaton.cpp.s
 ColonDashAutomaton.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_2.dir\build.make CMakeFiles/project_2.dir/ColonDashAutomaton.cpp.s
 .PHONY : ColonDashAutomaton.cpp.s
+
+Database.obj: Database.cpp.obj
+
+.PHONY : Database.obj
+
+# target to build an object file
+Database.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_2.dir\build.make CMakeFiles/project_2.dir/Database.cpp.obj
+.PHONY : Database.cpp.obj
+
+Database.i: Database.cpp.i
+
+.PHONY : Database.i
+
+# target to preprocess a source file
+Database.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_2.dir\build.make CMakeFiles/project_2.dir/Database.cpp.i
+.PHONY : Database.cpp.i
+
+Database.s: Database.cpp.s
+
+.PHONY : Database.s
+
+# target to generate assembly for a file
+Database.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\project_2.dir\build.make CMakeFiles/project_2.dir/Database.cpp.s
+.PHONY : Database.cpp.s
 
 DatalogProgram.obj: DatalogProgram.cpp.obj
 
@@ -373,6 +400,9 @@ help:
 	@echo ... ColonDashAutomaton.obj
 	@echo ... ColonDashAutomaton.i
 	@echo ... ColonDashAutomaton.s
+	@echo ... Database.obj
+	@echo ... Database.i
+	@echo ... Database.s
 	@echo ... DatalogProgram.obj
 	@echo ... DatalogProgram.i
 	@echo ... DatalogProgram.s
