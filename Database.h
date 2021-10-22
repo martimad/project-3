@@ -20,7 +20,14 @@ public:
     Database(){};
     ~Database(){};
 
-    void buildSchemes(vector<Predicate>);
+    void addTuples(string, Tuple*);
+    void addToMap(string, Relation*);
+
+    //void buildSchemes(vector<Predicate>);
+    //void buildFacts(vector<Predicate>);
+
+    //void buildQueries();
+
 
 };
 

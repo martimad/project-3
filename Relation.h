@@ -14,18 +14,23 @@ class Relation {
 private:
     string name;
     Header headers;
-    //set<Tuple> tuples;
+    set<Tuple*> tuples;
 public:
-    Relation() = default;
+    Relation() {
+
+    };
     ~Relation() = default;
+    void setName(string);
+    void setHeader(vector<Parameter>);
+    void addTuples(Tuple*);
+
+    //// needs functions select1, select2, project, and rename and tostring
+    //Relation select();
     void select();
     void project();
     void rename();
-    void setName(string);
-    void setHeader(vector<Parameter>);
-    //void setTuples(set<Tuple> tuples);
-    //// needs functions select1, select2, project, and rename
 
+    void toString();
 
 };
 

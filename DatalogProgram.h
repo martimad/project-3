@@ -18,7 +18,6 @@ private:
     vector<Predicate> queriesPredicates;
     vector<Rule> rulePredicates;
     set<string> domains;
-    //domain, all the parameters in the facts sets
 
 public:
     DatalogProgram() = default;
@@ -30,6 +29,7 @@ public:
     void toString();
 
     vector<Predicate> getSchemes();
+    vector<Predicate> getFacts();
 };
 
 

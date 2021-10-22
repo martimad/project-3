@@ -57,3 +57,6 @@ void DatalogProgram::toString(){
 vector<Predicate> DatalogProgram::getSchemes() {
     return schemePredicates;
 }
+vector<Predicate> DatalogProgram::getFacts(){
+    return factPredicates;
+}

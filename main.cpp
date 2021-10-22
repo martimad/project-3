@@ -2,6 +2,7 @@
 #include "Lexer.h"
 #include "Parser.h"
 #include "Database.h"
+#include "Interpreter.h"
 #include <iostream>
 #include <fstream>
 #include <sstream>
@@ -28,6 +29,7 @@ int main(int argc, char** argv) {
     Parser* parser = new Parser();
     Database* database = new Database();
 
+
     lexer->Run(fileContentToPass);
     tokensFromLexer = lexer->returnVector();
     //lexer->toString();
@@ -46,8 +48,12 @@ int main(int argc, char** argv) {
     //parser->toString();
 
     ////start database
-    database->buildSchemes(parser->getDatalog().getSchemes());
-    //database build facts
+    Interpreter* interpreter = new Interpreter(parser->getDatalog());
+    if(interpreter->build()){
+        cout << "build finished" << endl;
+    };
+    //database->buildSchemes(parser->getDatalog().getSchemes());
+    //database->buildFacts(parser->getDatalog().getFacts());
     //database build queries
     //database run queries
 

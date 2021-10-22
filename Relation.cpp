@@ -11,8 +11,13 @@ void Relation::setName(string name){
 void Relation::setHeader(vector<Parameter> parameters){
     this->headers.setAttributes(parameters);
 };
-//void Relation::setTuples(set<Tuple> tuples){
-//    for(int i = 0; i < tuples.size() ; ++i){
-//        this->tuples.at(i) = tuples.at(i);
-//    }
-//};
+void Relation::addTuples(Tuple* newTuple){
+    try{tuples.emplace(newTuple);}
+    catch(exception e){
+        cout << e.what();
+    }
+};
+
+void Relation::toString(){
+    cout << "string" ;
+}
