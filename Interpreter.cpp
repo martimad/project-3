@@ -63,7 +63,7 @@ Relation Interpreter::evaluatePredicate(Predicate p){
         }
     }
 
-    //do projects
+    //do projects, need to fix
     toModify = toModify.project();
 
     //do renames
