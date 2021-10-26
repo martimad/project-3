@@ -11,6 +11,12 @@ void Relation::setName(string name){
 void Relation::setHeader(vector<Parameter> parameters){
     this->headers.setAttributes(parameters);
 };
+void Relation::setHeader(Header newHeader){
+    headers = newHeader;
+}
+Header Relation::getHeader(){
+    return headers;
+};
 void Relation::addTuples(Tuple* newTuple){
     try{tuples.emplace(newTuple);
     bool isEmpty = false;}
@@ -19,24 +25,27 @@ void Relation::addTuples(Tuple* newTuple){
     }
 };
 
-Relation Relation::select(string valueLookingFor, int column){
-    Relation selectRelation;
-    return selectRelation;
+Relation* Relation::select(string valueLookingFor, int column){
+    Relation* newRelation = new Relation();
+    Header sameHeaders = getHeader();
+    newRelation->setHeader(sameHeaders);
+
+    return newRelation;
 };
-Relation Relation::select(vector<int> columns){
-    Relation selectRelation;
-    return selectRelation;
+Relation* Relation::select(vector<int> columns){
+    Relation* newRelation = new Relation();
+    return newRelation;
 };
 
 
 
-Relation Relation::project(){
-    Relation projectRelation;
+Relation* Relation::project(){
+    Relation* projectRelation= new Relation();
     return projectRelation;
 };
 
-Relation Relation::rename(){
-    Relation renameRelation;
+Relation* Relation::rename(){
+    Relation* renameRelation= new Relation();
     return renameRelation;
 };
 

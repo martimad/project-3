@@ -34,46 +34,51 @@ bool Interpreter::build(){
 }
 
 void Interpreter::evaluateQueries() {
+    cout << "eval queries reached" << endl;
     vector<Predicate> queries = datalog.getQueries();
+
     for(unsigned int i = 0; i < queries.size(); ++i){
-        Relation evaluatedQuery = evaluatePredicate(queries.at(i));
-        queriesToString(evaluatedQuery);
+        cout << "loop to eval queries" << endl;
+        Relation* evaluatedQuery = evaluatePredicate(queries.at(i));
+        //queriesToString(evaluatedQuery);
         //return relation
     }
 }
-Relation Interpreter::evaluatePredicate(Predicate p){
+Relation* Interpreter::evaluatePredicate(Predicate p){
     string RelationName = p.getID();
     Relation* originalRelation = database.getRelation(RelationName);
-
-    Relation toModify = *originalRelation;
+    cout << "original relation retrieved" << endl;
+    Relation* toModify = originalRelation;
+    cout << "copy created" << endl;
     vector<Parameter> parVec = p.getParamVec();
+    cout << "vec param made" << endl;
     // do selects
     for(unsigned int i = 0; i < parVec.size(); ++i){
         if(parVec.at(i).isConstant){
             //then string, call first inst of select
-            int column; //still need to figure out what this column is
-            toModify.select(parVec.at(i).getString(), column);
+            int column = 1; //still need to figure out what this column is
+            toModify = toModify->select(parVec.at(i).getString(), column);
         }
         else{
             // is an ID
             // if weve seen it before, call second inst of select
             vector<int> ints; // need to figure out what this vec is
-            toModify = toModify.select(ints);
+            toModify = toModify->select(ints);
             // else mark and keep for rename and project
         }
     }
 
     //do projects, need to fix
-    toModify = toModify.project();
+    toModify = toModify->project();
 
     //do renames
-    toModify = toModify.rename();
+    toModify = toModify->rename();
 
     return toModify;
 
 }
 
-void Interpreter::queriesToString(Relation& r) {
-    r.toString();
+void Interpreter::queriesToString(Relation* r) {
+    r->toString();
     cout << endl;
 }
