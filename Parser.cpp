@@ -154,7 +154,7 @@ void Parser::scheme(){
 
     schemeID = match( "ID");
     match("LEFT_PAREN");
-    schemeParameters.push_back(match("ID"));
+    schemeParameters.push_back(Parameter(match("ID"), "id"));
     idList(schemeParameters);
     match("RIGHT_PAREN");
     Predicate schemePredicate(schemeID, schemeParameters);
@@ -170,7 +170,7 @@ void Parser::fact (){
 
     factID = match( "ID");
     match("LEFT_PAREN");
-    factParameters.push_back(Parameter(match("STRING")));
+    factParameters.push_back(Parameter(match("STRING"), "string"));
     stringList(factParameters);
     //cout << "string list returned to fact" << endl;
     match("RIGHT_PAREN");
@@ -222,7 +222,7 @@ Predicate Parser::headPredicate(){
 
     headPredID = match("ID");
     match("LEFT_PAREN");
-    headPredParam.push_back(match("ID"));
+    headPredParam.push_back(Parameter(match("ID"),"id"));
     idList(headPredParam);
     match("RIGHT_PAREN");
     Predicate headPred(headPredID, headPredParam);
@@ -268,7 +268,7 @@ void Parser::stringList(vector<Parameter>& parameterVec){
 
     if(tokens.at(tokenIndex)->tokenType() == "COMMA") {
         match("COMMA");
-        parameterVec.push_back(Parameter(match("STRING")));
+        parameterVec.push_back(Parameter(match("STRING"), "string"));
         stringList(parameterVec);
     }
     else { return; }
@@ -278,7 +278,7 @@ void Parser::idList(vector<Parameter>& parameterVec){
     //cout << "Id list was called" << endl;
     if(tokens.at(tokenIndex)->tokenType() == "COMMA") {
         match("COMMA");
-        parameterVec.push_back(Parameter(match("ID")));
+        parameterVec.push_back(Parameter(match("ID"), "id"));
         idList(parameterVec);
     }
     else { return; }
@@ -287,9 +287,9 @@ void Parser::parameter(vector<Parameter>& passedVec){
 //            parameter	->	STRING | ID
     //cout << "parameter was called" << endl;
     if(tokens.at(tokenIndex)->tokenType() == "STRING") {
-        passedVec.push_back(Parameter(match("STRING")));
+        passedVec.push_back(Parameter(match("STRING"), "string"));
     }
-    else{ passedVec.push_back(Parameter(match("ID"))); }
+    else{ passedVec.push_back(Parameter(match("ID"), "id")); }
 }
 
 

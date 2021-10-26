@@ -60,3 +60,6 @@ vector<Predicate> DatalogProgram::getSchemes() {
 vector<Predicate> DatalogProgram::getFacts(){
     return factPredicates;
 }
+vector<Predicate> DatalogProgram::getQueries(){
+    return queriesPredicates;
+};

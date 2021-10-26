@@ -35,3 +35,7 @@ void Database::addTuples(string keyName, Tuple* tuple1) {
 void Database::addToMap(string keyName, Relation* newRelation){
     databaseMap.insert(pair{keyName, newRelation});
 }
+Relation* Database::getRelation(string keyName){
+    Relation* relationToReturn = databaseMap.find(keyName)->second;
+    return relationToReturn;
+};

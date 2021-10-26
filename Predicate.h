@@ -38,8 +38,7 @@ public:
         returnString += ")";
         return returnString;
     }
-    ////get whole vector
-    ////get specific parameter
+
 
 };
 

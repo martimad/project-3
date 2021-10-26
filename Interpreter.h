@@ -21,6 +21,9 @@ public:
     bool build();
     void buildSchemes(vector<Predicate>);
     void buildFacts(vector<Predicate>);
+    Relation evaluatePredicate(Predicate p);
+    void evaluateQueries();
+    void queriesToString(Relation& r);
 };
 
 

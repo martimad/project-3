@@ -52,8 +52,7 @@ int main(int argc, char** argv) {
     if(interpreter->build()){
         cout << "build finished" << endl;
     };
-    //database->buildSchemes(parser->getDatalog().getSchemes());
-    //database->buildFacts(parser->getDatalog().getFacts());
+    interpreter->evaluateQueries();
     //database build queries
     //database run queries
 

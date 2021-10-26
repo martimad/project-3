@@ -22,6 +22,7 @@ public:
 
     void addTuples(string, Tuple*);
     void addToMap(string, Relation*);
+    Relation* getRelation(string);
 
     //void buildSchemes(vector<Predicate>);
     //void buildFacts(vector<Predicate>);

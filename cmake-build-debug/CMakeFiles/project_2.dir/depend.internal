@@ -25,6 +25,17 @@ CMakeFiles/project_2.dir/DatalogProgram.cpp.obj
  C:/Users/Madelynn/CS236/project-3/Parameter.h
  C:/Users/Madelynn/CS236/project-3/Predicate.h
  C:/Users/Madelynn/CS236/project-3/Rule.h
+CMakeFiles/project_2.dir/Interpreter.cpp.obj
+ C:/Users/Madelynn/CS236/project-3/Database.h
+ C:/Users/Madelynn/CS236/project-3/DatalogProgram.h
+ C:/Users/Madelynn/CS236/project-3/Header.h
+ C:/Users/Madelynn/CS236/project-3/Interpreter.cpp
+ C:/Users/Madelynn/CS236/project-3/Interpreter.h
+ C:/Users/Madelynn/CS236/project-3/Parameter.h
+ C:/Users/Madelynn/CS236/project-3/Predicate.h
+ C:/Users/Madelynn/CS236/project-3/Relation.h
+ C:/Users/Madelynn/CS236/project-3/Rule.h
+ C:/Users/Madelynn/CS236/project-3/Tuple.h
 CMakeFiles/project_2.dir/Lexer.cpp.obj
  C:/Users/Madelynn/CS236/project-3/Automaton.h
  C:/Users/Madelynn/CS236/project-3/ColonAutomaton.h
@@ -63,6 +74,7 @@ CMakeFiles/project_2.dir/main.cpp.obj
  C:/Users/Madelynn/CS236/project-3/Database.h
  C:/Users/Madelynn/CS236/project-3/DatalogProgram.h
  C:/Users/Madelynn/CS236/project-3/Header.h
+ C:/Users/Madelynn/CS236/project-3/Interpreter.h
  C:/Users/Madelynn/CS236/project-3/Lexer.h
  C:/Users/Madelynn/CS236/project-3/Parameter.h
  C:/Users/Madelynn/CS236/project-3/Parser.h

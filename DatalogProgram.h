@@ -30,6 +30,7 @@ public:
 
     vector<Predicate> getSchemes();
     vector<Predicate> getFacts();
+    vector<Predicate> getQueries();
 };
 
 

@@ -12,12 +12,17 @@ private:
     string parameter;
 ////needed to string
 public:
-    Parameter(string parameterPassed){
+    Parameter(string parameterPassed, string type){
         this->parameter = parameterPassed;
+        if(type == "string"){
+            isConstant = true;
+        }
+        else isConstant = false;
     };
     string getString(){
         return parameter;
     };
+    bool isConstant;
 
 };
 
