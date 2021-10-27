@@ -14,7 +14,7 @@ class Relation {
 private:
     string name;
     Header headers;
-    set<Tuple*> tuples;
+    set<Tuple> tuples;
     bool isEmpty;
 public:
     Relation() {
@@ -25,15 +25,16 @@ public:
     void setHeader(vector<Parameter>);
     void setHeader(Header);
     Header getHeader();
-    void addTuples(Tuple*);
+    void addTuples(Tuple);
     bool empty();
+    unsigned int numTuples(){ return tuples.size();};
 
     //// needs functions select1, select2, project, and rename and tostring
     Relation* select(string valueLookingFor, int column);
     //One version of select finds all the tuples that have a constant value in a certain column
     //need to know what column to check for and what value should be in the column
 
-    Relation* select(vector<int> columns); //size should be >2
+    Relation* select(int, int); //size should be >2
     //Another version of select finds all the tuples that have the same value in two different columns
     //(it doesn't matter what the value is, as long as both columns have the same value).
 

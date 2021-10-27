@@ -19,7 +19,9 @@ public:
         }
     }
     ~Tuple() = default;
-
+    string getValue(int index){
+        return listOfAttributes.at(index);
+    }
 
     bool operator< (const Tuple &rhs) const {
         return listOfAttributes < rhs.listOfAttributes;

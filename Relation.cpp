@@ -17,7 +17,7 @@ void Relation::setHeader(Header newHeader){
 Header Relation::getHeader(){
     return headers;
 };
-void Relation::addTuples(Tuple* newTuple){
+void Relation::addTuples(Tuple newTuple){
     try{tuples.emplace(newTuple);
     bool isEmpty = false;}
     catch(exception e){
@@ -26,14 +26,26 @@ void Relation::addTuples(Tuple* newTuple){
 };
 
 Relation* Relation::select(string valueLookingFor, int column){
+    Relation *newRelation = new Relation();
+    Header sameHeaders = getHeader();
+    newRelation->setHeader(sameHeaders);
+    for(Tuple t : tuples){
+        if(t.getValue(column)== valueLookingFor){
+            newRelation->addTuples(t);
+        }
+    }
+    //Relation *relPointer = &newRelation;
+    return newRelation;
+};
+Relation* Relation::select(int firstColumn, int secondColumn){
     Relation* newRelation = new Relation();
     Header sameHeaders = getHeader();
     newRelation->setHeader(sameHeaders);
-
-    return newRelation;
-};
-Relation* Relation::select(vector<int> columns){
-    Relation* newRelation = new Relation();
+    for(Tuple t : tuples){
+        if(t.getValue(firstColumn)== t.getValue(secondColumn)){
+            newRelation->addTuples(t);
+        }
+    }
     return newRelation;
 };
 

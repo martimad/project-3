@@ -20,7 +20,7 @@ public:
     Database(){};
     ~Database(){};
 
-    void addTuples(string, Tuple*);
+    void addTuples(string, Tuple);
     void addToMap(string, Relation*);
     Relation* getRelation(string);
 

@@ -28,7 +28,7 @@
 //    //cout << "build facts finished" << endl;
 //}
 
-void Database::addTuples(string keyName, Tuple* tuple1) {
+void Database::addTuples(string keyName, Tuple tuple1) {
     databaseMap[keyName]->addTuples(tuple1);
 }
 
