@@ -30,20 +30,22 @@ Relation* Relation::select(string valueLookingFor, int column){
     Header sameHeaders = getHeader();
     newRelation->setHeader(sameHeaders);
     for(Tuple t : tuples){
-        if(t.getValue(column)== valueLookingFor){
+        if(t.getValue(column) == valueLookingFor){
             newRelation->addTuples(t);
+            newRelation->isEmpty = false;
         }
     }
-    //Relation *relPointer = &newRelation;
     return newRelation;
 };
+
 Relation* Relation::select(int firstColumn, int secondColumn){
     Relation* newRelation = new Relation();
     Header sameHeaders = getHeader();
     newRelation->setHeader(sameHeaders);
     for(Tuple t : tuples){
-        if(t.getValue(firstColumn)== t.getValue(secondColumn)){
+        if(t.getValue(firstColumn) == t.getValue(secondColumn)){
             newRelation->addTuples(t);
+            isEmpty = false;
         }
     }
     return newRelation;
@@ -53,6 +55,7 @@ Relation* Relation::select(int firstColumn, int secondColumn){
 
 Relation* Relation::project(map<string, int> seenIDs){
     Relation* projectRelation= new Relation();
+
     //get headers
     vector<string> keptHeaders;
     vector<int> columnsToKeep;
@@ -68,9 +71,9 @@ Relation* Relation::project(map<string, int> seenIDs){
 
     //for each tuple, get the string of values from the selected columns
     for(Tuple t : tuples){
-        vector<string> keptVariables;
+        vector<string> keptVariables; ///// i think this is where my issue is
         for(unsigned int i = 0; i < columnsToKeep.size(); i++){ //flips through vect of the column numbers we want
-            keptVariables.push_back(t.getValue(i)); //the string that the parameter contains
+            keptVariables.push_back(t.getValue(columnsToKeep.at(i))); //the string that the parameter contains
         }
         Tuple newTuple(keptVariables); //makes new tuple with kept values
         projectRelation->addTuples(newTuple); //adds to new relation
