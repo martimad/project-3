@@ -18,6 +18,11 @@ public:
             listOfAttributes.push_back(parameter.at(i).getString());
         }
     }
+    Tuple(vector<string> strings){
+        for(unsigned int i = 0 ; i < strings.size(); ++i){
+            listOfAttributes.push_back(strings.at(i));
+        }
+    }
     ~Tuple() = default;
     string getValue(int index){
         return listOfAttributes.at(index);
@@ -26,5 +31,6 @@ public:
     bool operator< (const Tuple &rhs) const {
         return listOfAttributes < rhs.listOfAttributes;
     }
+
 };
 #endif //PROJECT_2_TUPLE_H

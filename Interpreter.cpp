@@ -34,22 +34,22 @@ bool Interpreter::build(){
 }
 
 void Interpreter::evaluateQueries() {
-    cout << "eval queries reached" << endl;
+    //cout << "eval queries reached" << endl;
     vector<Predicate> queries = datalog.getQueries();
-
     for(unsigned int i = 0; i < queries.size(); ++i){
-        cout << "loop to eval queries" << endl;
+        //cout << "loop to eval queries" << endl;
+        cout << queries.at(i).toString() << "? ";
         Relation* evaluatedQuery = evaluatePredicate(queries.at(i));
         queriesToString(evaluatedQuery);
-        //return relation
     }
 }
 Relation* Interpreter::evaluatePredicate(Predicate p){
     string RelationName = p.getID();
     Relation* toModify = database.getRelation(RelationName);
-    //Relation* toModify = originalRelation;
     vector<Parameter> parVec = p.getParamVec();
     map<string, int> seenIDs;
+    vector<string> newVarInOrder;
+
     // do selects
     for(unsigned int i = 0; i < parVec.size(); ++i){
         if(parVec.at(i).isConstant){
@@ -62,6 +62,7 @@ Relation* Interpreter::evaluatePredicate(Predicate p){
             if(seenIDs.find(parVec.at(i).getString()) == seenIDs.end()){
                 // mark and keep for rename and project, "i" is first time weve seen it
                 seenIDs[parVec.at(i).getString()] = i;
+                newVarInOrder.push_back(parVec.at(i).getString());
             }
             else{
                 // if weve seen it before, call second inst of select
@@ -75,11 +76,11 @@ Relation* Interpreter::evaluatePredicate(Predicate p){
         }
     }
 
-    //do projects, need to fix
-    //toModify = toModify->project();
+    //do projects
+    toModify = toModify->project(seenIDs);
 
     //do renames
-    //toModify = toModify->rename();
+    toModify = toModify->rename(newVarInOrder);
 
     return toModify;
 
@@ -90,6 +91,7 @@ void Interpreter::queriesToString(Relation* r) {
         cout << "No" << endl;
     }
     else{
-        cout << "Yes(" << r->numTuples() << ")" <<  endl;
+        cout << "Yes(" << r->numTuples() << ")" << endl;
+        cout << r->toString();
     }
 }
