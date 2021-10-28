@@ -20,6 +20,9 @@ void Relation::setHeader(vector<string> strings){
 Header Relation::getHeader(){
     return headers;
 };
+string Relation::getName(){
+    return name;
+}
 void Relation::addTuples(Tuple newTuple){
     tuples.emplace(newTuple);
     //bool isEmpty = false;
@@ -27,7 +30,10 @@ void Relation::addTuples(Tuple newTuple){
 
 Relation* Relation::select(string valueLookingFor, int column){
     Relation *newRelation = new Relation();
+    string sameName = getName();
+    newRelation->setName(sameName);
     Header sameHeaders = getHeader();
+
     newRelation->setHeader(sameHeaders);
     for(Tuple t : tuples){
         if(t.getValue(column) == valueLookingFor){
@@ -40,6 +46,8 @@ Relation* Relation::select(string valueLookingFor, int column){
 
 Relation* Relation::select(int firstColumn, int secondColumn){
     Relation* newRelation = new Relation();
+    string sameName = getName();
+    newRelation->setName(sameName);
     Header sameHeaders = getHeader();
     newRelation->setHeader(sameHeaders);
     for(Tuple t : tuples){
@@ -53,16 +61,17 @@ Relation* Relation::select(int firstColumn, int secondColumn){
 
 
 
-Relation* Relation::project(map<string, int> seenIDs){
+Relation* Relation::project(vector<int> orderOfColumns){
     Relation* projectRelation= new Relation();
+    string sameName = getName();
+    projectRelation->setName(sameName);
 
     //get headers
+    //vector<string> keptHeaders(seenIDs.size());
     vector<string> keptHeaders;
-    vector<int> columnsToKeep;
-    for(auto it = seenIDs.begin(); it != seenIDs.end(); it++){
-        int i = it->second;//the column num that is is in
-        keptHeaders.push_back(headers.getValue(i)); //header val of that column
-        columnsToKeep.push_back(i); //indexes of columns that we want it to keep
+    for(unsigned int j = 0; j < orderOfColumns.size(); ++j){
+        keptHeaders.push_back(headers.getValue(j)); //header val of that column
+        //keptHeaders.insert(keptHeaders.begin()+ i , headers.getValue(i));
     }
     //set headers
     Header selectedHeaders;
@@ -72,8 +81,8 @@ Relation* Relation::project(map<string, int> seenIDs){
     //for each tuple, get the string of values from the selected columns
     for(Tuple t : tuples){
         vector<string> keptVariables; ///// i think this is where my issue is
-        for(unsigned int i = 0; i < columnsToKeep.size(); i++){ //flips through vect of the column numbers we want
-            keptVariables.push_back(t.getValue(columnsToKeep.at(i))); //the string that the parameter contains
+        for(unsigned int i = 0; i < orderOfColumns.size(); i++){//flips through vect of the column numbers we want
+            keptVariables.push_back(t.getValue(orderOfColumns.at(i))); //the string that the parameter contains
         }
         Tuple newTuple(keptVariables); //makes new tuple with kept values
         projectRelation->addTuples(newTuple); //adds to new relation
@@ -84,6 +93,8 @@ Relation* Relation::project(map<string, int> seenIDs){
 
 Relation* Relation::rename(vector<string> newVarNames){
     Relation* renameRelation= new Relation();
+    string sameName = getName();
+    renameRelation->setName(sameName);
     renameRelation->setHeader(newVarNames);
     for(Tuple t : tuples){
         renameRelation->addTuples(t);

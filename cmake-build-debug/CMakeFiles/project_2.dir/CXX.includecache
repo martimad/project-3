@@ -10,12 +10,6 @@ C:/Users/Madelynn/CS236/project-3/Automaton.h
 Token.h
 C:/Users/Madelynn/CS236/project-3/Token.h
 
-C:/Users/Madelynn/CS236/project-3/Database.cpp
-Database.h
-C:/Users/Madelynn/CS236/project-3/Database.h
-iostream
--
-
 C:/Users/Madelynn/CS236/project-3/Database.h
 Relation.h
 C:/Users/Madelynn/CS236/project-3/Relation.h
@@ -47,10 +41,6 @@ Parameter.h
 C:/Users/Madelynn/CS236/project-3/Parameter.h
 algorithm
 -
-
-C:/Users/Madelynn/CS236/project-3/Interpreter.cpp
-Interpreter.h
-C:/Users/Madelynn/CS236/project-3/Interpreter.h
 
 C:/Users/Madelynn/CS236/project-3/Interpreter.h
 Relation.h
@@ -96,10 +86,6 @@ vector
 sstream
 -
 
-C:/Users/Madelynn/CS236/project-3/Relation.cpp
-Relation.h
-C:/Users/Madelynn/CS236/project-3/Relation.h
-
 C:/Users/Madelynn/CS236/project-3/Relation.h
 iostream
 -
@@ -110,6 +96,8 @@ map
 sstream
 -
 string
+-
+vector
 -
 Header.h
 C:/Users/Madelynn/CS236/project-3/Header.h

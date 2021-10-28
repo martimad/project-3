@@ -9,6 +9,7 @@
 #include <map>
 #include <sstream>
 #include <string>
+#include <vector>
 #include "Header.h"
 #include "Tuple.h"
 using namespace std;
@@ -29,6 +30,7 @@ public:
     void setHeader(Header);
     void setHeader(vector<string>);
     Header getHeader();
+    string getName();
     void addTuples(Tuple);
     bool empty();
     unsigned int numTuples(){ return tuples.size();};
@@ -42,7 +44,7 @@ public:
     //Another version of select finds all the tuples that have the same value in two different columns
     //(it doesn't matter what the value is, as long as both columns have the same value).
 
-    Relation* project(map<string, int> seenIDs);
+    Relation* project(vector<int>);
     //We need to have a list of what columns we should keep
     //Columns are indexed by number, so we need a vector of ints to list what columns we should keep
 

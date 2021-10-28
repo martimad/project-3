@@ -47,14 +47,11 @@ int main(int argc, char** argv) {
     }
     //parser->toString();
 
-    ////start database
+    ////build database, run interpreter
     Interpreter* interpreter = new Interpreter(parser->getDatalog());
-    if(interpreter->build()){
-        cout << "build finished" << endl;
-    };
+    interpreter->build();
     interpreter->evaluateQueries();
-    //database build queries
-    //database run queries
+
 
     delete lexer;
     delete parser;

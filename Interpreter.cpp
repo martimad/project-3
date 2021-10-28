@@ -49,6 +49,7 @@ Relation* Interpreter::evaluatePredicate(Predicate p){
     vector<Parameter> parVec = p.getParamVec();
     map<string, int> seenIDs;
     vector<string> newVarInOrder;
+    vector<int> orderOfColumns;
 
     // do selects
     for(unsigned int i = 0; i < parVec.size(); ++i){
@@ -62,6 +63,7 @@ Relation* Interpreter::evaluatePredicate(Predicate p){
             if(seenIDs.find(parVec.at(i).getString()) == seenIDs.end()){
                 // mark and keep for rename and project, "i" is first time weve seen it
                 seenIDs[parVec.at(i).getString()] = i;
+                orderOfColumns.push_back(i);
                 newVarInOrder.push_back(parVec.at(i).getString());
             }
             else{
@@ -75,9 +77,8 @@ Relation* Interpreter::evaluatePredicate(Predicate p){
 
         }
     }
-
     //do projects
-    toModify = toModify->project(seenIDs);
+    toModify = toModify->project(orderOfColumns);
 
     //do renames
     toModify = toModify->rename(newVarInOrder);
